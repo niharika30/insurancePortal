@@ -1,0 +1,49 @@
+.f-bold {
+    font-weight: bold;
+}
+
+.btn-acord {
+    color: #666;
+    height: 50px!important;
+    width: 50px!important;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.bg-blue {
+    color: #fff;
+    background-color: #005580;
+    .item {
+        background-color: #005580;
+        p {
+            color: #fff;
+        }
+    }
+}
+
+.header {
+    //padding-top: 20px;
+    .item {
+        p {
+            color: #fff;
+        }
+        h2 {
+            color: #fff;
+            font-weight: bold;
+            font-size: 3.2rem;
+        }
+    }
+}
+
+.icon-lg-green {
+    background: #7ca940;
+    border-radius: 50%;
+    color: #fff;
+    padding: 6px;
+    height: 72px;
+    width: 72px;
+    text-align: center;
+    font-size: 4.8rem;
+}

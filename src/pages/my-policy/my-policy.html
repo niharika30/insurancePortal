@@ -1,0 +1,38 @@
+<ion-header primary>
+  <ion-navbar>
+    <button ion-button menuToggle >
+     <ion-icon name="arrow-back" class="menu-height menu-pleft"></ion-icon>
+      <ion-icon name="menu" class="menu-height"></ion-icon>
+     
+    </button>
+    <ion-title><p text-bold>MY POLICY DETAILS</p></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<p class="p-font p-left">HOME POLICIES</p>
+  <ion-list class="list-mbottom">
+        <ion-item class="itemHeight" (click)="homePage(this)">
+            <ion-icon name="home" item-left class="icon-sm-green"></ion-icon>
+            <ion-icon name="arrow-forward" class="icon-color" item-right></ion-icon>
+            <h3 class="item-font">JOHN'S HOME 1</h3>
+            <p class="item-font">Policy No. HPG-A$$$$$$</p>
+        </ion-item>
+    </ion-list>
+
+    <p class="p-font p-left">AUTO POLICIES</p>
+  <ion-list class="list-mbottom">
+        <ion-item class="itemHeight">
+            <ion-icon name="car" item-left class="icon-sm-green"></ion-icon>
+            <ion-icon name="arrow-forward" class="icon-color" item-right></ion-icon>
+            <h3 class="item-font">JOHN'S AUTO 1</h3>
+            <p class="item-font">Policy No. APN-A888888888</p>
+        </ion-item>
+        <ion-item class="itemHeight">
+            <ion-icon name="car" item-left class="icon-sm-green"></ion-icon>
+            <ion-icon name="arrow-forward" class="icon-color" item-right></ion-icon>
+            <h3 class="item-font">JOHN'S AUTO 2</h3>
+            <p class="item-font">Policy No. APN-A999999999</p>
+        </ion-item>
+    </ion-list>
+</ion-content>

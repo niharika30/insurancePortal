@@ -1,0 +1,72 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle right>
+            <ion-icon name="settings"></ion-icon>
+        </button>
+        <ion-title text-center>Hanover Insurance Group</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <div class="bg-blue">
+        <ion-list no-lines class="header">
+            <ion-item>
+                <p>Welcome</p>
+                <h2>JOHN SMITH</h2>
+            </ion-item>
+        </ion-list>
+        <ion-list no-lines *ngIf="showDiv">
+            <ion-item>
+                <p> New policy</p>
+                <p>Policy Period: 11/11/1111 - 11/11/1111</p>
+                <p>Change Effective Date: 02-23-2016</p>
+            </ion-item>
+            <ion-item>
+                <p> New policy</p>
+                <p>Policy Period: 11/11/1111 - 11/11/1111</p>
+                <p>Change Effective Date: 02-23-2016</p>
+            </ion-item>
+            <ion-item>
+                <p> New policy</p>
+                <p>Policy Period: 11/11/1111 - 11/11/1111</p>
+                <p>Change Effective Date: 02-23-2016</p>
+            </ion-item>
+        </ion-list>
+        <p text-center>
+            <button ion-button icon-only class="btn-acord" (click)="toggleShowDiv()">
+                <ion-icon name="arrow-down"></ion-icon>
+            </button>
+        </p>
+    </div>
+    <ion-grid style="text-align: center; background: #fff;">
+        <ion-row>
+            <ion-col width-50  (click)="myPolicyPage()">
+                <ion-icon name="document" item-left class="icon-lg-green"></ion-icon>
+                <p class="f-bold">MY POLICY DETAILS</p>
+            </ion-col>
+            <ion-col width-50 (click)="idCardPage()">
+                <ion-icon name="card" item-left class="icon-lg-green"></ion-icon>
+                <p class="f-bold">ID CARDS</p>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col width-50>
+                <ion-icon name="home" item-left class="icon-lg-green"></ion-icon>
+                <p class="f-bold">MY BILLS</p>
+            </ion-col>
+            <ion-col width-50 (click)="agentPage()">
+                <ion-icon name="person" item-left class="icon-lg-green"></ion-icon>
+                <p class="f-bold">MY AGENT</p>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col width-50>
+                <ion-icon name="analytics" item-left class="icon-lg-green"></ion-icon>
+                <p class="f-bold">ROADSIDE ASSISTANCE</p>
+            </ion-col>
+            <ion-col width-50 (click)="contactUsPage()">
+                <ion-icon name="call" item-left class="icon-lg-green"></ion-icon>
+                <p class="f-bold">CONTACT US</p>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
